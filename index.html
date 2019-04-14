@@ -4,12 +4,53 @@
         body {
             font-family: Helvetica;
             font-size: 18px;
-            padding-top: 100px;
             text-align: center; 
             background-color: white; 
-            color: black;
+            margin-bottom: 80px;
         }
-        /* img {
+
+        .main {
+            margin-top: 150px; /* Add a top margin to avoid content overlay */
+        }
+        
+        div.header {
+            padding-top: 80px;
+            overflow: hidden;
+            background-color: rgba(255,255,255, 0);
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+            z-index: 100;
+        }
+
+        div.left-side {
+            text-align: right; 
+            padding: 10px 20px 10px 0px;
+        }
+        div.right-side {
+            text-align: left; 
+            padding: 10px 0px 10px 0px;
+        }
+        div.left-side.text {
+            padding-left: 100px;
+        }
+
+        div.header {
+            padding-top: 80px;
+            overflow: hidden;
+            background-color: rgba(255,255,255, 0);
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+            z-index: 100;
+        }
+
+        div.footer {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        img {
             width: 90%;
             -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
@@ -18,21 +59,42 @@
             -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
         }
-        div.text {
-            text-align: right; 
-            padding: 10px 20px 10px 100px;
+        a, a:hover, a:visited, a:active, a:link {
+            text-decoration : none;
+            color : #000;
         }
-        div.text.header {
-            padding-top: 30px;
+
+        p.text-header {
+            font-size: 16px;
+            margin-bottom: 3px;
+            color: #555;
         }
-        div.pic {
-            text-align: left; 
-            padding: 10px 0px 10px 0px;
+        p.text-body {
+            font-size: 15px;
+            color: #999;
         }
-        small {
-            color: #aaa
-        } */
-        div {
+        p.text-footer {
+            font-size: 15px;
+            color: #aaa;
+        }
+
+        div.project-description {
+            margin-bottom: 5px;
+        }
+        div.project {
+            padding-top: 150px;
+        }
+        .pic {
+            margin-top: 10px;
+        }
+
+        .left {
+            text-align: left;
+        }
+        .right {
+            text-align: right;
+        }
+        /* div {
             height: 50px;
             width: 300px;
             position: fixed;
@@ -40,74 +102,171 @@
             left: 50%;
             margin-top: -25px;
             margin-left: -150px;
-        }
+        } */
     </style>
 </head>
 
 <body>
-    <div>THE WORLD WAS A MESS<br>BUT HIS HAIR WAS PERFECT</div>
-    <!-- <div class="row">
-        <div class="col-xs-4 text header">
-            <b>PINO PAVESE</b><br>
-            Architect | Switzerland<br>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-4 text">
-            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
-        </div>
-        <div class="col-xs-8 pic">
-            <img src="assets/pics/pavese-ag.jpg" alt="">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-offset-4 col-xs-8 pic">
-            <img src="assets/pics/pavese-plans.jpg" alt="">
+    <!-- <div>THE WORLD WAS A MESS<br>BUT HIS HAIR WAS PERFECT</div> -->
+    <div class="header">
+        <div class="row">
+            <div class="col-xs-4 left-side">
+                <a href="#">
+                    <b>PINO PAVESE</b><br>
+                    Architecture | New York<br>
+                </a>
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-xs-4 text header">
-            <b>HOCKNY</b><br>
-            Stool | New York
+    <div class="main">
+        <div class="row">
+            <div class="col-xs-4 left-side">
+                <a href="#P001">
+                    <img src="assets/pics/p001-1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-xs-8 right-side" style="color:#999;">
+                P 001
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-4 text">
-            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
+
+        <div class="row">
+            <div class="col-xs-4 left-side">
+                <a href="#P002">
+                    <img src="assets/pics/p002-1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-xs-8 right-side" style="color:#999;">
+                P 002
+            </div>
         </div>
-        <div class="col-xs-8 pic">
-            <img src="assets/pics/hockny-1.jpg" alt="">
+        <div class="row">
+            <div class="col-xs-4 left-side">
+                <a href="#P003">
+                    <img src="assets/pics/p003-1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-xs-8 right-side" style="color:#999;">
+                P 003
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-offset-4 col-xs-8 pic">
-            <img src="assets/pics/sol.jpg" alt="">
+        <div class="row">
+            <div class="col-xs-4 left-side">
+                <a href="#P004">
+                    <img src="assets/pics/p004-1-index.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-xs-8 right-side" style="color:#999;">
+                P 004
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-offset-4 col-xs-8 pic">
-            <img src="assets/pics/hockny-2.jpg" alt="">
+    
+        <div class="row project" id="P001">
+            <div class="col-xs-4 left-side text">
+                <div class="project-description">
+                    P 001
+                </div>
+                <p class="text-header">Headquarter for Medical Engineering Firm</p>
+                <p class="text-body">The project was a result of family values and trust between two generations. After 30 years in the same rented facility it was time to move into a new era. The concept of the building follows the same rules of the manufacuring process behind the walls. The building sits like a monolith within an otherwise predominantly agricultural zone. Its black corrugated metal facade allows for a clean and minimal look. The interior material are reduced to concrete and galvanized metal allowing natural light to bounce off without distracting glare.</p>
+                <p class="text-footer">Switzerland, 2010</p>
+            </div>
+            <div class="col-xs-8 right-side">
+                <img src="assets/pics/p001-1.jpg" alt="">
+            </div>
+        </div>
+        <div class="row pic">
+            <div class="col-xs-offset-4 col-xs-8 right-side">
+                <img src="assets/pics/p001-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="row pic">
+            <div class="col-xs-offset-4 col-xs-8 right-side">
+                <img src="assets/pics/p001-3.jpg" alt="">
+            </div>
+        </div>
+        <div class="row pic">
+            <div class="col-xs-offset-4 col-xs-8 right-side">
+                <img src="assets/pics/p001-4.jpg" alt="">
+            </div>
+        </div>
+        <div class="row pic">
+            <div class="col-xs-offset-4 col-xs-8 right-side">
+                <img src="assets/pics/p001-5.jpg" alt="">
+            </div>
+        </div>
+        <div class="row pic">
+            <div class="col-xs-offset-4 col-xs-8 right-side">
+                <img src="assets/pics/p001-6.jpg" alt="">
+            </div>
+        </div>
+    
+        <div class="row project" id="P002">
+            <div class="col-xs-4 left-side text">
+                <div class="project-description">
+                    P 002
+                </div>
+                <p class="text-header">Renovation Concept for Two-Family Residence</p>
+                <p class="text-body">The challange was to come up with a concept for the renovation of a two-family residence that was built by father and son in 1972. The main building’s ceiling heights were below 8 feet which lead to the introduction of two new cubes projecting out of the existing foot print and introducing a new interior height of 10 feet. Each cube partaining to one of the families with south-east respectively south-west exposure. A new stair and elevator brought the house up to a fully accessible building topped with a minimalistic interior contrasting the surrounding vineyards.</p>
+                <p class="text-footer">Switzerland, 2015</p>
+            </div>
+            <div class="col-xs-8 right-side">
+                <img src="assets/pics/p002-1.jpg" alt="">
+            </div>
+        </div>
+        <div class="row pic">
+            <div class="col-xs-offset-4 col-xs-8 right-side">
+                <img src="assets/pics/p002-2.jpg" alt="">
+            </div>
+        </div>
+    
+        <div class="row project" id="P003">
+            <div class="col-xs-4 left-side text">
+                <div class="project-description">
+                    P 003
+                </div>
+                <p class="text-header">Low-Income Housing</p>
+                <p class="text-body">Driven by the endless building machine of New York’s real estate market, this idea grew out of an interest for maximizing under developed properties. The expansion, inspired by Mise Van der Rohe’s Farnsworth House, feels natural as its transparent steel and glass boxes floats above the existing masonry structure. The intermediate space is used for new mechanical system allowing for an unobstructed roof that add to the housings communal space.</p>
+                <p class="text-footer">New York, 2017</p>
+            </div>
+            <div class="col-xs-8 right-side">
+                <img src="assets/pics/p003-1.jpg" alt="">
+            </div>
+        </div>
+        <div class="row pic">
+            <div class="col-xs-offset-4 col-xs-8 right-side">
+                <img src="assets/pics/p003-2.jpg" alt="">
+            </div>
+        </div>
+    
+        <div class="row project" id="P004">
+            <div class="col-xs-4 left-side text">
+                <div class="project-description">
+                    P 004
+                </div>
+                <p class="text-header">Hockny</p>
+                <p class="text-body">A stool design inspired by artist works such as Richard Serra's elliptical steel sculptures, Josef Albers' "Homage to the Square" paintings and Eva Hesse's 1964 paper sculpture series. Based on simple geometric forms Hockny is the synergy between square and circle, translated into a three dimensional object.</p>
+                <p class="text-footer">New York, 2019</p>
+            </div>
+            <div class="col-xs-8 right-side">
+                <img src="assets/pics/p004-1.jpg" alt="">
+            </div>
+        </div>
+        <div class="row pic">
+            <div class="col-xs-offset-4 col-xs-8 right-side">
+                <img src="assets/pics/p004-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="row pic">
+            <div class="col-xs-offset-4 col-xs-8 right-side">
+                <img src="assets/pics/p004-3.jpg" alt="">
+            </div>
+        </div>
+        <div class="row pic">
+            <div class="col-xs-offset-4 col-xs-8 right-side">
+                <img src="assets/pics/p004-4.jpg" alt="">
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-xs-4 text header">
-            <b>WHAT WOULD MIES DO?</b><br>
-            Low Income Housing | New York
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-4 text">
-            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
-        </div>
-        <div class="col-xs-8 pic">
-            <img src="assets/pics/mies-1.jpg" alt="">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-offset-4 col-xs-8 pic">
-            <img src="assets/pics/mies-2.jpg" alt="">
-        </div>
-    </div> -->
 </body>
