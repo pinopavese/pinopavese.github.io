@@ -1,0 +1,102 @@
+body {
+    font-family: Helvetica;
+    font-size: 18px;
+    text-align: center; 
+    background-color: white; 
+    margin-bottom: 80px;
+}
+.main {
+    margin-top: 150px; /* Add a top margin to avoid content overlay */
+}
+
+div.header {
+    padding-top: 80px;
+    overflow: hidden;
+    background-color: rgba(255,255,255, 0);
+    /* position: fixed;  */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 100;
+}
+
+div.left-side {
+    text-align: right; 
+    padding: 10px 20px 10px 0px;
+}
+div.right-side {
+    text-align: left; 
+    padding: 10px 0px 10px 0px;
+}
+div.left-side.text {
+    padding-left: 100px;
+}
+
+div.header {
+    padding-top: 80px;
+    overflow: hidden;
+    background-color: rgba(255,255,255, 0);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 100;
+}
+
+div.footer {
+    margin-top: 100px;
+    text-align: center;
+}
+
+img {
+    width: 90%;
+}
+.index img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.index img:hover {
+    opacity: 0.85;
+}
+a, a:hover, a:visited, a:active, a:link {
+    text-decoration : none;
+    color : #000;
+}
+
+p.text-header {
+    font-size: 18px;
+    margin-bottom: 3px;
+    color: #555;
+}
+p.text-body {
+    font-size: 18px;
+    color: #999;
+}
+p.text-footer {
+    font-size: 18px;
+    color: #aaa;
+}
+p.text-contact {
+    font-size: 18px;
+    color: #999;
+}
+
+div.project-description {
+    margin-bottom: 5px;
+}
+div.project {
+}
+div.description {
+    position: fixed;
+}
+div.contact {
+    padding-top: 150px;
+}
+.pic {
+    margin-top: 10px;
+}
+
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
