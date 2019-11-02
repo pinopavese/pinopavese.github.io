@@ -1,22 +1,12 @@
 body {
     font-family: Helvetica;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center; 
     background-color: white; 
     margin-bottom: 80px;
 }
 .main {
     margin-top: 150px; /* Add a top margin to avoid content overlay */
-}
-
-div.header {
-    padding-top: 80px;
-    overflow: hidden;
-    background-color: rgba(255,255,255, 0);
-    /* position: fixed;  */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 100;
 }
 
 div.left-side {
@@ -62,29 +52,32 @@ a, a:hover, a:visited, a:active, a:link {
 }
 
 p.text-header {
-    font-size: 18px;
     margin-bottom: 3px;
     color: #555;
 }
 p.text-body {
-    font-size: 18px;
     color: #999;
 }
 p.text-footer {
-    font-size: 18px;
     color: #aaa;
 }
 p.text-contact {
-    font-size: 18px;
     color: #999;
 }
+
+p.text-header.landing {
+    margin-bottom: 0px;
+}
+
+p.text-footer.landing {
+    margin-bottom: 0px;
+}
+
 
 div.project-description {
     margin-bottom: 5px;
 }
-div.project {
-}
-div.description {
+.fixed {
     position: fixed;
 }
 div.contact {
@@ -99,4 +92,12 @@ div.contact {
 }
 .right {
     text-align: right;
+}
+
+.text-iphone {
+    width: 60%;
+    font-size:24px;
+}
+.larger-font {
+    font-size:20px;
 }
