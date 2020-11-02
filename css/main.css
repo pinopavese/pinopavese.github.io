@@ -94,6 +94,13 @@ div.contact {
     text-align: right;
 }
 
+.grey {
+    color: #aaa;
+}
+.red {
+    color: red;
+}
+
 .text-iphone {
     width: 60%;
     font-size:24px;
@@ -102,5 +109,12 @@ div.contact {
     font-size:20px;
 }
 .larger-font-24 {
-    font-size:20px;
+    font-size:24px;
+}
+.larger-font-28 {
+    font-size:28px;
+}
+
+.larger-font-32 {
+    font-size:32px;
 }
